@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700,900');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+.navbar{
+    padding-bottom: 0;
+}
+
+.title-nav {
+    font-weight: 600;
+}
+
+.btn-mutualan{
+    border: 1px solid black;
+    border-radius: 0px;
+}
+
+.container-nav {
+    border-bottom: 1px solid #dddddd;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+.my-nav {
+    flex: 1;
+}
+
+
+.header {
+    /* padding-top: 100px; */
+    width: 100vw;
+    height: 100vh;
+}
+
+.col-md-6{
+    padding: 0px;
+}
+
+.about {
+    height: 100vh;
+    padding-top: 100px;
+    padding-bottom: 20px;
+    padding-right: 100px;
+}
+
+.picture-user {
+    height: 100%;
+    background: url('/assets/IMG/picture-user.png');
+    background-size: cover;
+}
+
+.about h1{
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.about p{
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.btn-frame{
+    width: 60%;
+    height: auto;
+}
+
+.btn-hire{
+    font-weight: 600;
+    width: 40%;
+    height: 60px;
+    border-radius: 0px;
+    background: var(--bs-orange);
+}
+
+.btn-project{
+    font-weight: 600;
+    width: 40%;
+    height: 60px;
+    border-radius: 0px;
+    background: white;
+}
