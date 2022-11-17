@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700,900');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+}
+
+.navbar{
+    padding-bottom: 0;
+}
+
+.title-nav {
+    font-weight: 600;
+}
+
+.btn-mutualan{
+    border: 1px solid black;
+    border-radius: 0px;
+}
+
+.container-nav {
+    border-bottom: 1px solid #dddddd;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-left: 180px;
+    padding-right: 180px;
+    
+}
+
+.my-nav {
+    flex: 1;
+}
+
+
+
+.contact{
+    padding-top: 1rem;
+}
+
+.section-title p {
+    margin: 0;
+    margin: -15px 0 15px 0;
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    color: #333;
+}
+
+.contact .info-box {
+    color: #444444;
+    padding: 20px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.08);
+}
+
+.contact .info-box h3 {
+    font-size: 20px;
+    color: #333;
+    font-weight: 700;
+    margin: 10px 0 8px 68px;
+}
+
+.contact .info-box .icf {
+    font-size: 24px;
+    color: var(--bs-orange);
+    border-radius: 50%;
+    padding: 14px;
+    float: left;
+    background: rgba(77, 77, 77, 0.1);
+}
+
+.contact .info-box p {
+    padding: 0;
+    color: #333;
+    line-height: 24px;
+    font-size: 14px;
+    margin: 0 0 0 68px;
+} 
+
+.social-links{
+    display: flex;
+}
+
+.icf-links{
+    margin-top: 5px;
+    margin-left: 20px;
+    text-decoration: none;
+    color: #333;
+    display: flex;
+}
+
+.icf-links:hover{
+    color: #444444;
+}
+
+.contact .php-email-form {
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.08);
+}
+
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -2px;
+    margin-left: -2px;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.contact .php-email-form input {
+    padding: 20px 15px;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    /* height: calc(1.5em + .75rem + 2px); */
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.contact .php-email-form textarea {
+    padding: 12px 15px;
+}
+
+.btn-conmit{
+    background:  var(--bs-orange);
+    border: 0;
+    padding: 10px 30px;
+    color: #fff;
+    transition: 0.4s;
+    border-radius: 4px;
+}

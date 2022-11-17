@@ -2,8 +2,13 @@
 
 * {
     font-family: 'Poppins', sans-serif;
-    overflow-x: hidden;
     box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
 }
 
 .navbar{
@@ -21,8 +26,11 @@
 
 .container-nav {
     border-bottom: 1px solid #dddddd;
-    padding-bottom: 20px;
+    padding-bottom: 1.2rem;
     padding-top: 10px;
+    margin-left: 11rem;
+    padding-right: 11rem;
+    
 }
 
 .my-nav {
@@ -30,10 +38,17 @@
 }
 
 
+
 .header {
     /* padding-top: 100px; */
     width: 100vw;
-    height: 100vh;
+    height: calc(100vh - 71px);
+}
+.header .container-fluid {
+    height: 100%;
+}
+.header .container-fluid .row {
+    height: 100%;
 }
 
 .col-md-6{
@@ -41,19 +56,31 @@
 }
 
 .about {
-    height: 100vh;
+    height: 70%;
+    /* background-color: #ea7311; */
     padding-top: 100px;
+    padding-left: 11rem;
     padding-bottom: 20px;
-    padding-right: 100px;
+    padding-right: 50px;
 }
 
 .picture-user {
     height: 100%;
-    background: url('/assets/IMG/picture-user.png');
+    background: #DED1C1;
+    /* background: url('/assets/IMG/picture-user.png'); */
     background-size: cover;
+    background-position-y: bottom;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.picture-user img{
+    max-height: calc(100vh - 71px);
 }
 
 .about h1{
+    overflow: hidden;
     font-size: 50px;
     font-weight: 600;
 }
@@ -70,16 +97,193 @@
 
 .btn-hire{
     font-weight: 600;
-    width: 40%;
-    height: 60px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 0px;
-    background: var(--bs-orange);
+    background: #FE481C;
 }
 
 .btn-project{
     font-weight: 600;
-    width: 40%;
-    height: 60px;
+    padding: 1rem 2rem;
     border-radius: 0px;
     background: white;
+}
+
+.btn-hire:hover{
+    background: #ea7311;
+}
+
+.btn-project:hover{
+    border-color: var(--bs-black);
+}
+
+.btn-project .bi-cloud-arrow-down-fill {
+    display: none;
+}
+.btn-project:hover .bi-cloud-arrow-down {
+    display: none;
+}
+.btn-project:hover .bi-cloud-arrow-down-fill {
+    display: block;
+}
+
+.project{
+    background: #333;
+    height: 30%;
+}
+
+
+.title-project {
+    padding-left: 11rem;
+    width: 80%;
+    height: 50%;
+}
+
+.title-project p{
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.project-more{
+    width: 160px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    text-decoration: none;
+    background: #F8D007;
+    border: none;
+}
+
+.project-more:hover{
+    background: #ddba0c;
+}
+
+.project .container{
+    height: 100%;
+}
+
+.presentase-project{
+    padding-right: 50px;
+    width: 100%;
+}
+
+.list-presentase p{
+    margin: 0;
+    padding: 0;
+}
+
+.list-presentase li{
+    display: flex;;
+    width: 100%;
+    align-items: center;
+    /* background-color: #ea7311; */
+    justify-content: space-between;
+    border-bottom: 1px solid #dddddd;
+}
+
+@media (max-width: 1150px) {
+    :root{
+        font-size: 14px;
+    }
+    .container-nav {
+        margin-left: 5rem;
+        padding-right: 5rem;
+    }
+
+    .about{
+        padding-left: 5rem;
+    }
+
+    .title-project{
+        padding-left: 5rem;
+    }
+
+}
+
+@media (max-width: 800px) {
+
+    :root{
+        font-size: 12px;
+    }
+
+    body{
+        overflow: auto;
+    }
+
+    .container-nav{
+        margin-top: 1rem;
+        margin-left: 0rem;
+        padding-right: 0rem;
+
+        padding: 1rem;
+    }
+
+    .left-side{
+        margin: 5rem 5rem 0 5rem;
+    }
+    
+
+    .c-t .col-md-6{
+        width: 100%;
+    }
+
+    .about{
+        padding: 0
+    }
+    
+    .picture-user{
+        display: none;
+    }
+    .project{
+        height: fit-content;
+    }
+
+    .lyt-800{
+        display: none;
+    }
+
+    .title-project{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        height: auto;
+        padding: 1rem 24px;
+        align-items: center;
+    }
+
+    .list-presentase{
+        padding: 0 24px;
+    }
+
+    .presentase-project{
+        padding: 0px 0px 0px 0px;
+    }
+
+
+    .btn-frame{
+        width: 100%;
+    }
+    
+
+}
+
+@media screen and (max-width:400px) {
+
+    :root{
+        font-size: 11px;
+    }
+
+
+    .container-nav{
+        display: flex;
+        flex-direction: row;
+        margin-top: 1rem;
+    }
+
+    
 }
