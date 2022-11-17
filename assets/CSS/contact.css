@@ -24,10 +24,10 @@ body {
 
 .container-nav {
     border-bottom: 1px solid #dddddd;
-    padding-bottom: 20px;
+    padding-bottom: 1.2rem;
     padding-top: 10px;
-    padding-left: 180px;
-    padding-right: 180px;
+    margin-left: 11rem;
+    padding-right: 11rem;
     
 }
 
@@ -106,16 +106,16 @@ body {
 .form-row {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     margin-right: -2px;
     margin-left: -2px;
 }
-
-.form-group {
-    margin-bottom: 1rem;
+.form-row .col-md-6{
+    width: calc(50% - .5rem);
 }
 
 .contact .php-email-form input {
-    padding: 20px 15px;
+    padding: .5rem;
 }
 
 .form-control {
@@ -137,4 +137,56 @@ body {
     color: #fff;
     transition: 0.4s;
     border-radius: 4px;
+}
+
+.php-email-form > .form-group{
+    margin: 1rem 0;
+}
+
+@media (max-width:1300px){
+    body{
+        overflow: auto;
+    }
+    .container-nav {
+        padding-left: 5rem;
+        margin-left: 0rem;
+        padding-right: 5rem;
+    }
+}
+
+@media (max-width: 800px) {
+
+    :root{
+        font-size: 12px;
+    }
+
+    body{
+        overflow: auto;
+    }
+
+    .container-nav{
+        margin-top: 1rem;
+        margin-left: 0rem;
+        padding-right: 0rem;
+
+        padding: 1rem;
+    }
+    
+
+}
+
+@media screen and (max-width:400px) {
+
+    :root{
+        font-size: 11px;
+    }
+
+
+    .container-nav{
+        display: flex;
+        flex-direction: row;
+        margin-top: 1rem;
+    }
+
+    
 }

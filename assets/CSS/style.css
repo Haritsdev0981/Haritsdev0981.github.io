@@ -58,7 +58,10 @@ body {
 .about {
     height: 70%;
     /* background-color: #ea7311; */
-    padding-top: 100px;
+    /* padding-top: 100px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     padding-left: 11rem;
     padding-bottom: 20px;
     padding-right: 50px;
@@ -201,6 +204,27 @@ body {
 
     .title-project{
         padding-left: 5rem;
+    }
+
+}
+
+@media (max-width: 1300px){
+
+    .container-nav{
+        margin-left: 8rem;
+        padding-right: 8rem;
+    }
+
+    .about{
+        padding-left: 8rem;
+    }
+
+    :root{
+       font-size: 14px; 
+    }
+
+    .title-project{
+        padding-left: 8rem;
     }
 
 }
