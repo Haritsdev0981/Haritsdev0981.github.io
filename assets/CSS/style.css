@@ -227,6 +227,10 @@ body {
         padding-left: 8rem;
     }
 
+    .title-project p{
+        font-size: 14px;
+    }
+
 }
 
 @media (max-width: 800px) {
