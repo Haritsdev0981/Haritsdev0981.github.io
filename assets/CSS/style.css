@@ -42,7 +42,7 @@ body {
 .header {
     /* padding-top: 100px; */
     width: 100vw;
-    height: calc(100vh - 71px);
+    height: calc(100vh - 4rem);
 }
 .header .container-fluid {
     height: 100%;
