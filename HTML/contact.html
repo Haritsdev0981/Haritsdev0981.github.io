@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Haresh</title>
-    <link rel="shortcut icon" href="/assets/IMG/pp-tab.png" type="image/webp">
 
-    <!--Boostrap-->
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Haresh</title>
+  <link rel="shortcut icon" href="/assets/IMG/pp-tab.png" type="image/webp">
+
+  <!--Boostrap-->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
 
@@ -24,9 +25,10 @@
   <link rel="stylesheet" href="/assets/icofont/icofont.min.css">
 
 </head>
+
 <body>
 
-    <!--Navbar-->
+  <!--Navbar-->
   <nav class="navbar navbar-expand-lg">
     <div class="container-nav container-fluid" data-aos="fade-right" data-aos-duration="1000">
       <a class="title-nav navbar-brand" href="#">Harits <span style="color: #FE481C;">.</span></a>
@@ -98,7 +100,8 @@
                   class="icofont-instagram"></i></a>
               <a href="https://api.whatsapp.com/send/?phone=082112889474&text&type=phone_number&app_absent=0"
                 class="icf-links whatsapp"><i class="icofont-brand-whatsapp"></i></a>
-              <a href="https://www.linkedin.com/in/harits-a0741821a/" class="icf-links linkedin"><i class="icofont-linkedin"></i></a>
+              <a href="https://www.linkedin.com/in/harits-a0741821a/" class="icf-links linkedin"><i
+                  class="icofont-linkedin"></i></a>
             </div>
           </div>
         </div>
@@ -119,15 +122,13 @@
         </div>
       </div>
 
-      <form action="forms/contact.php" method="post" role="form" class="php-email-form mt-4 ">
+      <form class="php-email-form mt-4" name="submit-to-google-sheet" id="form-spreatsheet">
         <div class="form-row">
           <div class="col-md-6 form-group">
-            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4"
-              data-msg="Please enter at least 4 chars">
+            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name">
           </div>
           <div class="col-md-6 form-group">
-            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email"
-              data-msg="Please enter a valid email">
+            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email">
           </div>
         </div>
         <div class="form-group">
@@ -149,8 +150,25 @@
   <!--Contact Close-->
 
   <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycby_zsNZaKDdbok9npVGcK-RzuwfETd-IyvnrFVZjqhoP7CmuaE1PHYj7MfBmp4WFx6opA/exec'
+    const form = document.forms['submit-to-google-sheet']
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, {
+          method: 'POST',
+          body: new FormData(form)
+        })
+        .then(response => {
+          console.log('Success!', response)
+          form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+
     AOS.init();
   </script>
-    
+
 </body>
+
 </html>
