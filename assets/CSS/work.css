@@ -24,11 +24,10 @@ body {
 
 .container-nav {
     border-bottom: 1px solid #dddddd;
-    padding-bottom: 20px;
+    padding-bottom: 1.2rem;
     padding-top: 10px;
-    padding-left: 180px;
-    padding-right: 180px;
-    
+    padding-left: 11rem;
+    padding-right: 11rem;
 }
 
 .my-nav {
@@ -37,11 +36,15 @@ body {
 
 
 .syanayya{
-    margin-top: 50px;
+    margin-top: 3.2rem;
     width: 100vw;
     height: 100vh;
-    padding-left: 150px;
-    padding-right: 180px;
+    padding-left: 9rem;
+    padding-right: 10rem;
+}
+
+.syanayya .container {
+    padding: 0;
 }
 
 .theme{
@@ -58,7 +61,7 @@ body {
 }
 
 .review{
-    margin-bottom: 10px;
+    margin-bottom: 1rem;
 }
 
 .detail-work{
@@ -80,4 +83,65 @@ body {
     font-size: 16px;
     font-weight: bold;
     color: #fff;
+}
+
+.txt-h1{
+    margin-bottom: 1rem;
+    font-family: 'Poppins';
+    font-weight: 700;
+}
+
+.img-doc{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+
+@media (max-width:1300px){
+    body{
+        overflow: auto;
+    }
+    .container-nav {
+        padding-left: 5rem;
+        margin-left: 0rem;
+        padding-right: 5rem;
+    }
+}
+
+@media (max-width: 800px) {
+
+    :root{
+        font-size: 12px;
+    }
+
+    body{
+        overflow: auto;
+    }
+
+    .container-nav{
+        margin-top: 1rem;
+        margin-left: 0rem;
+        padding-right: 0rem;
+
+        padding: 1rem;
+    }
+    
+
+}
+
+@media screen and (max-width:400px) {
+
+    :root{
+        font-size: 11px;
+    }
+
+
+    .container-nav{
+        display: flex;
+        flex-direction: row;
+        margin-top: 1rem;
+    }
+
+    
 }
