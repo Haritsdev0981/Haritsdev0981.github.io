@@ -6,7 +6,7 @@
 }
 
 body {
-    overflow: hidden;
+    overflow: auto;
 }
 
 .navbar {
@@ -179,4 +179,48 @@ body {
 .header .portfolio-wrap:hover .portfolio-info::after {
     bottom: 15px;
     right: 15px;
+}
+
+@media (max-width:1400px){
+    /* body{
+        overflow: auto;
+    } */
+    .container-nav {
+        padding-left: 5rem;
+        margin-left: 0rem;
+        padding-right: 5rem;
+    }
+}
+
+@media (max-width: 800px) {
+
+    :root{
+        font-size: 12px;
+    }
+
+    .container-nav{
+        margin-top: 1rem;
+        margin-left: 0rem;
+        padding-right: 0rem;
+
+        padding: 1rem;
+    }
+    
+
+}
+
+@media screen and (max-width:400px) {
+
+    :root{
+        font-size: 11px;
+    }
+
+
+    .container-nav{
+        display: flex;
+        flex-direction: row;
+        margin-top: 1rem;
+    }
+
+    
 }
