@@ -6,13 +6,14 @@
 }
 
 body {
-    overflow: hidden;
+    /* overflow: hidden; */
     margin: 0;
     padding: 0;
 }
 
 .navbar{
     padding-bottom: 0;
+    background-color: white;
 }
 
 .title-nav {
@@ -43,6 +44,7 @@ body {
     /* padding-top: 100px; */
     width: 100vw;
     height: calc(100vh - 4rem); /*71px*/
+    margin-top: 5rem;
 }
 .header .container-fluid {
     height: 100%;
@@ -256,6 +258,7 @@ body {
     }
 
     .left-side{
+        height: 100%;
         margin: 5rem 5rem 0 5rem;
     }
     

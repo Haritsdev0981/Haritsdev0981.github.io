@@ -5,12 +5,12 @@
     box-sizing: border-box;
 }
 
-body {
-    overflow: hidden;
-}
-
 .navbar{
     padding-bottom: 0;
+    /* position: fixed;
+    width: 100%;
+    z-index: 1000; */
+    background-color: white;
 }
 
 .title-nav {
@@ -36,7 +36,7 @@ body {
 
 
 .syanayya{
-    margin-top: 3.2rem;
+    margin-top: 6rem;
     width: 100vw;
     height: 100vh;
     padding-left: 9rem;
@@ -67,16 +67,8 @@ body {
 .detail-work{
     margin-top: 25px;
     border-radius: 10px;
-    width: 100%;
-    height: 130px;
-    align-items: center;
+    padding: 2rem;
     background: #DED1C1 ;
-    justify-content: space-around;
-    display: flex;
-}
-
-.detail-work li{
-    flex: 1;
 }
 
 .text-isi{
@@ -115,16 +107,14 @@ body {
         font-size: 12px;
     }
 
-    body{
-        overflow: auto;
+    .my-nav{
+        padding-left: 2rem;
     }
 
-    .container-nav{
-        margin-top: 1rem;
-        margin-left: 0rem;
-        padding-right: 0rem;
-
-        padding: 1rem;
+    .syanayya{
+        margin-top: 9rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
     }
     
 
