@@ -5,11 +5,14 @@
     box-sizing: border-box;
 }
 
+body {
+    /* overflow: hidden; */
+    margin: 0;
+    padding: 0;
+}
+
 .navbar{
     padding-bottom: 0;
-    /* position: fixed;
-    width: 100%;
-    z-index: 1000; */
     background-color: white;
 }
 
@@ -26,8 +29,9 @@
     border-bottom: 1px solid #dddddd;
     padding-bottom: 1.2rem;
     padding-top: 10px;
-    padding-left: 11rem;
+    margin-left: 11rem;
     padding-right: 11rem;
+    
 }
 
 .my-nav {
@@ -169,6 +173,25 @@
 .documentation .portfolio-wrap:hover .portfolio-info::after {
     bottom: 15px;
     right: 15px;
+}
+
+@media (max-width: 1150px) {
+    :root{
+        font-size: 14px;
+    }
+    .container-nav {
+        margin-left: 5rem;
+        padding-right: 5rem;
+    }
+
+    .about{
+        padding-left: 5rem;
+    }
+
+    .title-project{
+        padding-left: 5rem;
+    }
+
 }
 
 
