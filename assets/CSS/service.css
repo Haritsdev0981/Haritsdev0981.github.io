@@ -13,15 +13,46 @@ body {
     margin-top: 3em;
 }
 
-.section-title p {
+.section-title .ttl {
     margin: 0;
     margin: -15px 0 15px 0;
     font-size: 36px;
     font-weight: 700;
     text-transform: uppercase;
     font-family: "Poppins", sans-serif;
-    color: hsl(0, 19%, 36%);
+    color: #333;
 }
+
+.btn-hire{
+    font-weight: 600;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FE481C;
+}
+
+.btn-hire:hover{
+    background: #333;
+}
+
+.mycard{
+    height: 130px;
+    margin: 10px;
+    display: inline-block;
+}
+
+.card-subtitle{
+    font-weight: bold;
+}
+
+.title-repo{
+    font-weight: 700;
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+    color: #333;
+}
+
 
 @media (max-width:1400px){
     /* body{
